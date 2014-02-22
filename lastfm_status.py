@@ -15,7 +15,8 @@ def update_status_thread():
         if track:
             for account in gajim.connections.keys():
                 gajim.interface.roster.send_status(
-                    account, gajim.connections[account].get_status(), track
+                    account, gajim.connections[account].get_status(), track,
+                    auto=True
                 )
         time.sleep(30)
 
