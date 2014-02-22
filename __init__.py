@@ -1,0 +1,1 @@
+from lastfm_status import LastFmStatus
